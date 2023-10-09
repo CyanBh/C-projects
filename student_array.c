@@ -2,17 +2,17 @@
 */
 #include <stdio.h>
 
-int takeInputStudentArrayAndDisplayAverage();
+void display_student_average();
 
 int main ()
 {
-    takeInputStudentArrayAndDisplayAverage();
+    display_student_average();
 	return 0;
 
 }
 
 
- takeInputStudentArrayAndDisplayAverage()
+void  display_student_average()
 {
     	int totalStudents, totalMarks=0; //number of students and the sum of their marks
 
