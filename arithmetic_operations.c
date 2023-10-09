@@ -2,8 +2,6 @@
 #include <stdlib.h>
 
 void show_menu();
-
-
 int  choice_manager(int, float, float);
 
 
