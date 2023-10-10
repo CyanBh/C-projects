@@ -30,7 +30,7 @@ int main ()
 
 	float average = total_marks/total_students;
 
-	printf("\n\nThe average marks of %d students is %f ", total_students, average);
+	printf("\n\nThe average marks of %d students is %f\n ", total_students, average);
 
 
 
