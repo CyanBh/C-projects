@@ -8,11 +8,11 @@ int main()
     printf("Enter the number of disks: ");
     scanf ("%d",&n);
 
-    tower(n,'A','C','B');
+    tower(n,'A','B','C');
     return 0;
 }
 
-void tower(int n ,char beg, char end, char aux)
+void tower(int n ,char beg, char aux, char end)
 {
     if(n<=0)
         printf("\nThe number of disks provided must be positive and greater than zero");
@@ -22,9 +22,9 @@ void tower(int n ,char beg, char end, char aux)
 
     else
     {
-        tower(n-1, beg, aux, end);
+        tower(n-1, beg, end, aux);
         printf("\nMoved disk from %c to %c", beg, end);
-        tower(n-1, aux, end, beg);
+        tower(n-1, aux, beg, end);
     }
 
 }
