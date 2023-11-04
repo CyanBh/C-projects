@@ -3,4 +3,4 @@ and returns the sum, average and standard deviation of these numbers.
 Call this function from main( ) and print the results in main( ).*/
 
 #include <stdio.h>
-void take_input;
+void take_input;              
