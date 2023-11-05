@@ -4,7 +4,7 @@ using pointer arithmetic.*/
 int sum_array(int*);
 int main()
 {
-    int n,sum;
+    int n;
     printf("Enter the number of elements in the array: ");
     scanf("%d",&n);
     int arr[n];
@@ -13,7 +13,7 @@ int main()
         printf("element %d: ",i+1);
         scanf("%d",&arr[i]);
     }
-    sum = sum_array(arr);
+    int sum = sum_array(&arr);
     printf("\nThe sum of elements of the array is %d",sum);
 
     return 0;
