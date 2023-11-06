@@ -1,5 +1,5 @@
 #include <stdio.h>
-void swap(int*, int*);
+void Swap(int*, int*);
 
 int main()
 {
@@ -28,7 +28,7 @@ int main()
 
     for (int i = 1; i<num-1; i= i+2)
     {
-        swap( &my_arr[i], &my_arr[i+1]);
+        Swap( &my_arr[i], &my_arr[i+1]);
     }
         printf("swapped array\n");
         for(int i = 0; i<num ; i++)//display my_arr after swapping
@@ -41,7 +41,7 @@ int main()
     return 0;
 }
 
-void swap(int* a, int *b)
+void Swap(int* a, int *b)
 {
 	int temp;
 	temp = *a;

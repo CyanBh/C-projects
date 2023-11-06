@@ -8,18 +8,17 @@ const int n = 25;
 int arr[n];
 
 void TakeInput();
-void print_array();
-void search_number(int);
+void PrintArray();
+void SearchNumber(int);
 
 
 int main()
 {
     int num;//to search   
     TakeInput();
-    //print_array();
     printf("Enter the number to search for: ");
     scanf("%d",&num);
-    search_number(num);
+    SearchNumber(num);
 
     return 0;
 }
@@ -35,7 +34,7 @@ void TakeInput()
     }
 }
 
-void print_array()
+void PrintArray()
 {
      for(int i=0;i<n;i++)
     {
@@ -44,7 +43,7 @@ void print_array()
     printf("\n");
 }
 
-void search_number(int number)
+void SearchNumber(int number)
 {
     int tally = 0;//stores the number of times the required number has been found
     for (int i = 0;i<n;i++)
