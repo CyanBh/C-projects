@@ -7,7 +7,7 @@ and if it is present, display the number of times it appears in the array.*/
 const int n = 25;
 int arr[n];
 
-void take_input();
+void TakeInput();
 void print_array();
 void search_number(int);
 
@@ -15,7 +15,7 @@ void search_number(int);
 int main()
 {
     int num;//to search   
-    take_input();
+    TakeInput();
     //print_array();
     printf("Enter the number to search for: ");
     scanf("%d",&num);
@@ -25,7 +25,7 @@ int main()
 }
 
 
-void take_input()
+void TakeInput()
 {
     printf("Enter 25 numbers of your choice...\n");
     for(int i=0;i<n;i++)

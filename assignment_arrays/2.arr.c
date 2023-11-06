@@ -5,14 +5,14 @@ how many are negative, how many are even and how many odd.*/ //(done)
 #include <stdio.h>
 const int n = 25;
 int arr[n];
-void take_input();
+void TakeInput();
 void positive_negative();
 void odd_even();
 
 
 int main()
 {
-    take_input();
+    TakeInput();
     positive_negative();
     odd_even();
     return 0;
@@ -51,7 +51,7 @@ void odd_even()
 
 
 
-void take_input()
+void TakeInput()
 {
     printf("Enter %d numbers of your choice...\n",n);
     for(int i=0;i<n;i++)
