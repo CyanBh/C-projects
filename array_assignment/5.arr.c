@@ -21,5 +21,29 @@ struct Customer
 }customer[200];
 int n = 0;//global variable
 
+void CreateNew()
+{
+    char has_minimum;
+    char choice;
+    printf("Create new account...\n ");
+    printf("Enter account number: ");
+    scanf("%d%*c", &customer[n].accno);
+    printf("Enter your name: ");
+    fgets(customer[n].name,65,stdin);
+    customer[n].balance = 0;
 
+}
 
+void ShowCustomerWithInsufficientBalance()
+{
+    //for (int i = 0; i<n;i++)
+    {
+
+    }
+}
+
+int main()
+{
+    CreateNew();
+    return 0;
+}
