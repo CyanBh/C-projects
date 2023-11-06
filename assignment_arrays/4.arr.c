@@ -10,16 +10,16 @@ struct Student
 {
     int roll,year;
     char name[65],department[35],course[35];
-}s[450];//array of student
+}student[450];
 int n = 0;//global index variable
 
 
 
-void create_record();
-void display_name_by_year();
-void search_by_roll();
-static inline void menu();
-static inline void display(int index);
+void CreateRecord();
+void JoinedInYear();//shows all students joined in a particular year
+void SearchByRoll();
+static inline void Menu();
+static inline void Display(int index);
 
 int main()
 {  
@@ -27,22 +27,22 @@ int main()
 
     do
     {
-        menu();
+        Menu();
         scanf("%d",&choice);
         switch(choice)
         {
             case 1:
-                create_record();
+                CreateRecord();
                 break;
             case 2:
                 for(int i=0;i<n;i++)
-                    display(i);
+                    Display(i);
                 break;               
             case 3:
-                display_name_by_year();
+                JoinedInYear();
                 break;               
             case 4:
-                search_by_roll();
+                SearchByRoll();
                 break;
             case 5:
                 exit(0);
@@ -55,24 +55,24 @@ int main()
 }
 
 
-void create_record()//fn to create record done
+void CreateRecord()//fn to create record done
 {
     printf("\nRecord %d: ",n+1);
     printf("\nEnter Roll number of student: ");
-    scanf("%d%*c",&s[n].roll);//ignores newline. 
+    scanf("%d%*c",&student[n].roll);//ignores newline. 
     printf("Enter name: ");
-    fgets(s[n].name,65,stdin);
+    fgets(student[n].name,65,stdin);
     printf("Enter name of Department: ");
-    fgets(s[n].department,35,stdin);
+    fgets(student[n].department,35,stdin);
     printf("Enter Name of Course: ");
-    fgets(s[n].course,35,stdin);
+    fgets(student[n].course,35,stdin);
     printf("Enter Year of Joining: ");
-    scanf("%d",&s[n].year);
+    scanf("%d",&student[n].year);
     n++;
 
 }
 
-void display_name_by_year()
+void JoinedInYear()
 {
     int yr;
     _Bool has_student;
@@ -81,9 +81,9 @@ void display_name_by_year()
     printf("Students joined in %d: ",yr);
     for(int i = 0;i<=n;i++)
     {
-        if(s[i].year==yr)
+        if(student[i].year==yr)
         {
-            printf("\n%d: %s",i,s[i].name);
+            printf("\n%d: %s",i,student[i].name);
             has_student = 1;
         }
     }
@@ -93,26 +93,26 @@ void display_name_by_year()
     }
 }
 
-void search_by_roll()
+void SearchByRoll()
 {
     int roll;
     printf("\nEnter roll number of student to search: ");
     scanf("%d",&roll);
     for(int i = 0;i<=n;i++)
     {
-        if(s[i].roll==roll)
+        if(student[i].roll==roll)
         {
-            display(i);
+            Display(i);
         }
     }
 }
 
-static inline void display(int index)
+static inline void Display(int index)
 {
-    printf("\nRoll number of student: %d\nName: %s\nDepartment: %s\nCourse: %s\nYear of Joining: %d\n",s[index].roll,s[index].name,s[index].department,s[index].course,s[index].year);
+    printf("\nRoll number of student: %d\nName: %s\nDepartment: %s\nCourse: %s\nYear of Joining: %d\n",student[index].roll,student[index].name,student[index].department,student[index].course,student[index].year);
 }
 
-static inline void menu()
+static inline void Menu()
 {
     printf("\n1.Create New Record\n2.Display all students\n3.Display names of students joined in a particular year\n4.Search student by roll number\n5.Exit program\nEnter your choice: ");
 }
