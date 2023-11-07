@@ -154,7 +154,7 @@ static inline void Withdraw(int index, float amount)
     else
     {
         customer[index].balance -= amount;
-        printf("%f has been debited, your total balance is %f\n",amount,customer[index].balance);
+        printf("%f has been credited, your total balance is %f\n",amount,customer[index].balance);
     }
    
 }
