@@ -13,7 +13,7 @@ int main()
         printf("element %d: ",i+1);
         scanf("%d",&arr[i]);
     }
-    int sum = sum_array(&arr);
+    int sum = sum_array(arr);
     printf("\nThe sum of elements of the array is %d",sum);
  
     return 0;
