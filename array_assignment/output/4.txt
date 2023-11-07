@@ -1,0 +1,78 @@
+1.Create New Record
+2.Display all students
+3.Display names of students joined in a particular year
+4.Search student by roll number
+5.Exit program
+Enter your choice: 1
+
+Record 1: 
+Enter Roll number of student: 1
+Enter name: Sayan Bhattacharya
+Enter name of Department: Computer Science and Engineering
+Enter Name of Course: B.Tech
+Enter Year of Joining: 2022
+
+1.Create New Record
+2.Display all students
+3.Display names of students joined in a particular year
+4.Search student by roll number
+5.Exit program
+Enter your choice: 1
+
+Record 2: 
+Enter Roll number of student: 2
+Enter name: Mohan Kumar
+Enter name of Department: Social Sciences
+Enter Name of Course: B.A(History)
+Enter Year of Joining: 2023
+
+1.Create New Record
+2.Display all students
+3.Display names of students joined in a particular year
+4.Search student by roll number
+5.Exit program
+Enter your choice: 1
+
+Record 3: 
+Enter Roll number of student: 3
+Enter name: Yadav Jain
+Enter name of Department: Fashion Technologies
+Enter Name of Course: BFA
+Enter Year of Joining: 2022
+
+1.Create New Record
+2.Display all students
+3.Display names of students joined in a particular year
+4.Search student by roll number
+5.Exit program
+Enter your choice: 3
+Enter the year to list students who joined: 2022
+Students joined in 2022: 
+0: Sayan Bhattacharya
+
+2: Yadav Jain
+
+1.Create New Record
+2.Display all students
+3.Display names of students joined in a particular year
+4.Search student by roll number
+5.Exit program
+Enter your choice: 4
+
+Enter roll number of student to search: 2
+
+Roll number of student: 2
+Name: Mohan Kumar
+
+Department: Social Sciences
+
+Course: B.A(History)
+
+Year of Joining: 2023
+
+1.Create New Record
+2.Display all students
+3.Display names of students joined in a particular year
+4.Search student by roll number
+5.Exit program
+Enter your choice: 5

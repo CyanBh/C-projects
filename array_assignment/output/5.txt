@@ -1,0 +1,83 @@
+(Not compulsory to write the whole thing)
+
+Welcome to ITL Bank
+1.Create New Account
+2.Perform Transaction
+3.Show Accounts having less than minimum balance
+4.Exit
+Enter Your choice: 1
+Create new account...
+Enter account number: 1001
+Enter your name: Sayan Bhattacharya
+Your balance is 0.000000
+
+Welcome to ITL Bank
+1.Create New Account
+2.Perform Transaction
+3.Show Accounts having less than minimum balance
+4.Exit
+Enter Your choice: 1
+Create new account...
+Enter account number: 1002
+Enter your name: Rajkumar Patel
+Your balance is 0.000000
+
+Welcome to ITL Bank
+1.Create New Account
+2.Perform Transaction
+3.Show Accounts having less than minimum balance
+4.Exit
+Enter Your choice: 3
+Showing customers with insufficient balance...
+1: 1001  Sayan Bhattacharya
+2: 1002  Rajkumar Patel
+
+Welcome to ITL Bank
+1.Create New Account
+2.Perform Transaction
+3.Show Accounts having less than minimum balance
+4.Exit
+Enter Your choice: 2
+Transaction Menu
+Enter account number: 1001
+Sayan Bhattacharya
+, your balance is 0.000000
+Select the following options
+1.Deposit
+2.Withdrawal
+Enter your choice: 1
+Enter amount: 1000
+1000.000000 has been debited, your total balance is 1000.000000
+
+Welcome to ITL Bank
+1.Create New Account
+2.Perform Transaction
+3.Show Accounts having less than minimum balance
+4.Exit
+Enter Your choice: 2
+Transaction Menu
+Enter account number: 1001
+Sayan Bhattacharya
+, your balance is 1000.000000
+Select the following options
+1.Deposit
+2.Withdrawal
+Enter your choice: 2
+Enter amount: 901
+The balance is insufficient for the specified withdrawal
+
+Welcome to ITL Bank
+1.Create New Account
+2.Perform Transaction
+3.Show Accounts having less than minimum balance
+4.Exit
+Enter Your choice: 3
+Showing customers with insufficient balance...
+2: 1002  Rajkumar Patel
+
+Welcome to ITL Bank
+1.Create New Account
+2.Perform Transaction
+3.Show Accounts having less than minimum balance
+4.Exit
+Enter Your choice: 4

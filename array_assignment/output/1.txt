@@ -1,0 +1,28 @@
+Enter 25 numbers of your choice...
+1: 12
+2: 12
+3: 23
+4: 23
+5: 34
+6: 45
+7: 56
+8: 12
+9: 12
+10: 23
+11: 2
+12: 3
+13: 4
+14: 2
+15: 3
+16: 4
+17: 5
+18: 12
+19: 67
+20: 45
+21: 12
+22: 234
+23: 345
+24: 12
+25: 5
+Enter the number to search for: 12
+12 is present and it appears 7 times.
